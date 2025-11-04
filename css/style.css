@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+/* --- Global Reset --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* --- Body --- */
+body {
+  background: #fff7f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* --- Container --- */
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* --- Title --- */
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+/* --- Login Form --- */
+.login-form {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* --- Input Box --- */
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px;
+  border: 1.8px solid #ccc;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #f14b4b;
+}
+
+/* --- Input Icons --- */
+.input-box i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  font-size: 16px;
+}
+
+.input-box .icon {
+  left: 12px;
+}
+
+.input-box .eye {
+  right: 12px;
+  cursor: pointer;
+}
+
+.input-box .user,
+.lock {
+  left: 12px;
+  cursor: pointer;
+}
+
+/* --- Forgot Password --- */
+.forgot {
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.forgot a {
+  font-size: 13px;
+  color: #f14b4b;
+  text-decoration: none;
+}
+
+.forgot a:hover {
+  text-decoration: underline;
+}
+
+/* --- Login Button --- */
+.login-btn {
+  width: 100%;
+  background: #f14b4b;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #e53a3a;
+}
+
+/* --- OR Text --- */
+.or-text {
+  margin: 25px 0 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* --- Social Login --- */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.social-login button {
+  border: 1.5px solid #f14b4b;
+  background: transparent;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #f14b4b;
+  transition: 0.3s ease;
+}
+
+.social-login button:hover {
+  background: #f14b4b;
+  color: #fff;
+}
+
+/* --- Signup Text --- */
+.signup-text {
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-link {
+  color: #f14b4b;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* --- Responsive (Galaxy S23 Ultra and similar) --- */
+@media screen and (max-width: 450px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .login-form {
+    padding: 25px 15px;
+  }
+
+  .input-box input {
+    font-size: 14px;
+  }
+}
